@@ -1,0 +1,13 @@
+<form method="post">
+    {% csrf_token %}
+    <label for="rooftop_area">Shadow-free rooftop area (sq. ft.):</label>
+    <input type="number" name="rooftop_area" required>
+    <br>
+    <label for="zipcode">Zipcode:</label>
+    <input type="number" name="zipcode" required maxlength="6">
+    <br>
+    <label for="monthly_consumption">Average monthly energy consumption (kWh):</label>
+    <input type="number" name="monthly_consumption" step="0.01" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
