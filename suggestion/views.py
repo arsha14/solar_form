@@ -1,7 +1,7 @@
 import requests
 from django.shortcuts import render
 
-def solar_panel(request):
+def solar_plant_form(request):
     if request.method == 'POST':
         # Get form inputs
         rooftop_area = float(request.POST.get('rooftop_area'))
